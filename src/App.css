@@ -1,38 +1,269 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.ant-menu-item {
+  height: 38px !important;
+}
+
+.ant-layout-header {
+  height: 104px !important;
+}
+
+.main-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.header-img {
+  width: 100%;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.close {
+  background: none !important;
+  color: white !important;
+}
+
+.glavni-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.glavni-img img {
+  height: 30%;
+}
+
+.ant-modal-mask {
+  backdrop-filter: blur(3px);
+}
+
+.ant-table-wrapper {
+  width: 100% !important;
+}
+
+/* Spravochni style */
+.form-button {
+  position: absolute;
+  bottom: -35px;
+  left: 15rem;
+}
+
+.content-spravochniki {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  height: 30vh;
+  margin-top: 90px;
+  gap: 10px;
+}
+
+.spravochniki-btn {
+  width: 300px;
+}
+
+.button {
+  text-align: left;
+  width: 100%;
+  height: 40px;
+}
+
+/* Form style */
+.form {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.main .form {
+  grid-template-rows: none;
+}
+
+.ant-form-item {
+  margin-bottom: 15px !important;
+}
+
+.stil {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* table style */
+.ant-table table {
+  -webkit-box-shadow: -1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.ant-table-tbody > tr > td {
+  border-right: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+  height: 100% !important;
+}
+
+.ant-table-thead > tr > th {
+  border: 1px solid #000000 !important;
+  background: #001529 !important;
+  color: white !important;
+}
+
+.ant-table-footer {
+  border: 1px solid #000000 !important;
+  border-right: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+  background: #001529 !important;
+  color: white !important;
+  padding: 6px !important;
+  z-index: -12;
+}
+
+.ant-table-footer > tr > th {
+  border: 1px solid #000000 !important;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  padding: 14px 14px !important;
+}
+
+.tableModal .ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  padding: 8px 8px !important;
+}
+
+.ant-modal-body {
+  padding: 24px;
+  padding-bottom: 12px !important;
+}
+
+.blue {
+  background: rgb(84, 84, 255);
+}
+
+/* Tableimg style */
+.teble-img {
+  width: 30px !important;
+}
+
+.test {
+  background: rgb(153, 153, 248);
+  cursor: pointer;
+}
+
+.ant-form input[type="file"] {
+  display: block;
+}
+.site-footer__tabs {
+  background: brown !important;
+}
+
+.select {
+  margin-top: -16px;
+}
+
+.ant-upload-list {
+  height: 70vh;
+}
+
+.prodaja-modal {
+  display: flex;
+  align-items: center;
+}
+
+.prodaja-modal_content {
+  position: absolute;
+  right: 300px;
+}
+
+.prodaja-hr {
+  width: 100%;
+  height: 50px;
+  margin-left: 50px;
+}
+
+hr {
+  color: #000000;
+  transform: rotate(270deg);
+  width: 50%;
+  height: 10px;
+}
+
+.modal-border {
+  border: 1px solid #8f8e8e !important;
+  padding: 1rem 0;
+}
+
+.modal-border-button {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-border-button .span span {
+  border: 1px solid #aaa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-border-button .span span {
+  border-right: 2px solid #aaa;
+  font-size: 1.4rem;
+  padding: 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nazat {
+  border-color: #aaa;
+}
+
+.modaltable .inputt {
+  bottom: 3px;
+}
+
+.inputt {
+  position: absolute;
+  border: 1px dotted #aaa;
+  bottom: -2px;
+  left: 0;
+  padding: 0.2rem 1rem;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.ant-modal-close-x {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  width: 22px !important;
+  height: 22px !important;
+  line-height: 0 !important;
+  background: red;
+  color: #ffffff;
+  font-size: 1.1rem !important;
+  border-radius: 3px;
+}
+
+.ant-modal-close-x svg {
+  margin-top: 2.5px;
+}
+
+/* Loading */
+.example {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  min-height: 100vh;
+  border-radius: 4px;
 }
